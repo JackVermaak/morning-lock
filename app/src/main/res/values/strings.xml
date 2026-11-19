@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Morning Lock</string>
+    <string name="guard_label">Morning Lock guard</string>
+    <string name="guard_description">Locks your phone each morning once your free minutes are up, until your tasks are done. It only checks which app is open. It does not read anything on your screen.</string>
+</resources>
