@@ -37,7 +37,7 @@ adb shell pm grant com.morninglock.app android.permission.WRITE_SECURE_SETTINGS
 
 ## Build and install
 
-**Easiest:** download the debug APK from the [latest release](https://github.com/JackVermaak/morning-lock/releases/latest) and open it on the phone.
+**Easiest:** download the debug APK from the [latest release](https://github.com/JackVermaak/morning-lock/releases/latest) and open it on the phone. Every build is signed with the same debug key (`app/debug.keystore`), so later releases install over earlier ones.
 
 **From source:** You need the Android SDK (Android Studio, or the command-line tools) and JDK 17 or newer.
 

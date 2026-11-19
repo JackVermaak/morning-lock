@@ -11,8 +11,20 @@ android {
         applicationId = "com.morninglock.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
+    }
+
+    // A shared debug key, committed on purpose (Android's standard public password "android"),
+    // so every build, local or on GitHub Actions, is signed the same way and a new release
+    // installs over the old one. It is not used for anything secret.
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
     }
 
     buildTypes {
